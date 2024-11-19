@@ -1,0 +1,45 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <SeekBar
+        android:id="@+id/seekbar_rojo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:progressDrawable="@drawable/progress_rojo"
+        android:thumbTint="@color/color_rojo"
+        android:thumb="@drawable/selector_red" />
+
+    <SeekBar
+        android:id="@+id/seekbar_verde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar_rojo"
+        android:layout_marginTop="8dp"
+        android:progressDrawable="@drawable/progress_verde"
+        android:thumbTint="@color/color_verde"
+        android:thumb="@drawable/selector_green"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_azul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar_verde"
+        android:layout_marginTop="8dp"
+        android:progressDrawable="@drawable/progress_azul"
+        android:thumbTint="@color/color_azul"
+        android:thumb="@drawable/selector_blue" />
+
+
+    <Button
+        android:id="@+id/boton_cambiar_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar_azul"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Cambiar Color" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#000000">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Posta de Sol"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:paddingStart="16dp" />
+
+        <ImageView
+            android:id="@+id/icon_moon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="48dp"
+            android:src="@drawable/ic_moon" />
+
+        <ImageView
+            android:id="@+id/icon_smile"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_smile" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/fondo_azul_claro"
+        android:layout_width="match_parent"
+        android:layout_height="417dp"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/cuadro_azul_oscuro"
+        android:layout_marginBottom="-1dp"
+        android:background="#2196F3">
+
+        <View
+            android:id="@+id/circulo_amarillo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_shape" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/cuadro_azul_oscuro"
+        android:layout_width="match_parent"
+        android:layout_height="251dp"
+        android:layout_alignParentBottom="true"
+        android:background="#0D47A1" />
+
+</RelativeLayout>
